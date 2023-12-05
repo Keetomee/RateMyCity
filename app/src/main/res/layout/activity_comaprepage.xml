@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".comaprepage">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="#08313A"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="5dp">
+
+
+        <Button
+            android:id="@+id/more99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#08313A"
+            android:drawableBottom="@drawable/baseline_more_horiz_24"
+            android:text="m" />
+
+        <Button
+            android:id="@+id/button_add212"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#08313A"
+            android:drawableBottom="@drawable/baseline_add_24"
+            android:text="a" />
+
+        <Button
+            android:id="@+id/button_home2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#08313A"
+            android:drawableBottom="@drawable/baseline_home_24"
+            android:text="h" />
+
+        <Button
+            android:id="@+id/button_compare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#1A5653"
+            android:drawableBottom="@drawable/baseline_compare_arrows_24"
+            android:text="c" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/SearchBar"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/search_bar_background"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Search Here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <ImageView
+        android:id="@+id/my_image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/girl_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.960"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="185dp"
+        android:layout_height="647dp"
+        app:cardBackgroundColor="#004343"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SearchBar"
+        app:layout_constraintVertical_bias="0.433">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bgc" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bonifacio Global City" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView6"
+                    android:layout_width="187dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#004343"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.937"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SearchBar"
+                    app:layout_constraintVertical_bias="0.431">
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_align_vertical_bottom_24"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ratings" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cleanliness:  4/5" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Safety:  4/5" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost of living:  3/5" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job opportunities:  5/5" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amenities:  5/5" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transportation:  4/5" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Culture:  2/5" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Climate:  3/5" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Community:  5/5" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView7"
+                    android:layout_width="187dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#004343"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.937"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SearchBar"
+                    app:layout_constraintVertical_bias="0.431">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:alpha="0.8"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overall:" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        app:srcCompat="@drawable/baseline_star_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        app:srcCompat="@drawable/baseline_star_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        app:srcCompat="@drawable/baseline_star_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        app:srcCompat="@drawable/baseline_star_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        app:srcCompat="@drawable/baseline_star_half_24" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About the City" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BGC, or Bonifacio Global City, is a vibrant and modern district in Metro Manila, Philippines. It offers a bustling urban environment with a focus on safety and sustainability. The area boasts well-planned infrastructure, pedestrian-friendly streets, and green spaces. BGC's community is diverse, and its commitment to safety and security ensures a pleasant and secure experience for residents and visitors alike." />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1A5653"
+                    android:text="ViewMap"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1A5653"
+                    android:text="Make a review"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="187dp"
+        android:layout_height="647dp"
+        app:cardBackgroundColor="#004343"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SearchBar"
+        app:layout_constraintVertical_bias="0.431">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/baguio" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baguio City" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView111"
+                    android:layout_width="187dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#004343"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.937"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SearchBar"
+                    app:layout_constraintVertical_bias="0.431">
+                    <ImageView
+                        android:id="@+id/imageView15123"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_align_vertical_bottom_24"/>
+
+                    <TextView
+                        android:id="@+id/textView31424"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ratings" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView31243"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cleanliness:  3/5" />
+
+                <TextView
+                    android:id="@+id/textView4615"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Safety:  3/5" />
+
+                <TextView
+                    android:id="@+id/textView5525"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost of living:  4/5" />
+
+                <TextView
+                    android:id="@+id/textView7515"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job opportunities:  2/5" />
+
+                <TextView
+                    android:id="@+id/textView85156"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amenities:  3/5" />
+
+                <TextView
+                    android:id="@+id/textView91515"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transportation:  3/5" />
+
+                <TextView
+                    android:id="@+id/textView10515"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Culture:  5/5" />
+
+                <TextView
+                    android:id="@+id/textView151251"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Climate:  5/5" />
+
+                <TextView
+                    android:id="@+id/textView15152"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Community:  2/5" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView74145"
+                    android:layout_width="187dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="#004343"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.937"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SearchBar"
+                    app:layout_constraintVertical_bias="0.431">
+
+                    <TextView
+                        android:id="@+id/textView183833"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:alpha="0.8"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overall:" />
+
+                    <ImageView
+                        android:id="@+id/imageView6743"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        app:srcCompat="@drawable/baseline_star_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView773"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        app:srcCompat="@drawable/baseline_star_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView87272"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        app:srcCompat="@drawable/baseline_star_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView972828"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        app:srcCompat="@drawable/baseline_star_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView10b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        app:srcCompat="@drawable/baseline_star_half_24" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView14b24"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About the City" />
+
+                <TextView
+                    android:id="@+id/textView15g24"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baguio City, located in the Philippines' Cordillera Central mountains, is known as the Summer Capital of the Philippines due to its cool climate. The city offers a refreshing escape from the heat, with lush pine forests, scenic views, and a relaxed atmosphere. Baguio's vibrant market, filled with local produce and handicrafts, adds to its charm. The city's commitment to cleanliness and environmental preservation contributes to a pleasant and eco-friendly environment for residents and tourists to enjoy." />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1A5653"
+                    android:text="ViewMap"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1A5653"
+                    android:text="Make a review"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
